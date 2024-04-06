@@ -1,7 +1,7 @@
 
 #include "stdafx.h"
 // #include "H3CombatMonster.hpp"
-#include "../../__include__/H3API/single_header/H3API.hpp"
+#include "../../H3API/single_header/H3API.hpp"
 using namespace h3;
 
 #include "erm_types.h"
@@ -8511,6 +8511,34 @@ extern "C" __declspec(dllexport) int isReceptive(int creature) {
 	return Receptive_Table[creature];
 }
 
+_LHF_(z_hook_0075642C) { // !!MA
+	char letter = c->eax;
+	int mn = *(int*)(c->ebp - 4);
+	Mes* Mp = (Mes*)*(int*)(c->ebp + 0x14);
+	int i;
+	switch (letter)
+	{
+	case 'W':
+	{
+		char* str = "";
+		str = ERM2String(&Mp->m.s[/*Mp->i*/ 1], 0, &i);
+		// Mp->i += i;
+		// Mess(Mp);
+
+		// v_MsgBox(str, 1);
+
+		ChangeCreatureTable(mn, str);
+		break;
+	}
+	default:
+		return EXEC_DEFAULT;
+		break;
+	}
+
+	c->return_address = 0x00756912;
+	return NO_EXEC_DEFAULT;
+}
+
 _LHF_(z_hook_0075F840) { // !!BM
 	char letter = 'A' + *(char*)(c->ebp - 0x44);
 	int mn = *(int*)(c->ebp - 0xc);
@@ -8616,6 +8644,7 @@ void CreateAdditionalTables()
 	// 00478CC3
 
 	Z_Amethyst->WriteLoHook(0x0075F840, z_hook_0075F840);
+	Z_Amethyst->WriteLoHook(0x0075642C, z_hook_0075642C);
 
 	//majaczek tables
 	memset(resource_type_table, -1, MONSTERS_AMOUNT);
@@ -8646,11 +8675,13 @@ void CreateAdditionalTables()
 	memset(isRogue, false, MONSTERS_AMOUNT); isRogue[143] = true;
 	memset(after_action_spell_mastery, 2, MONSTERS_AMOUNT);
 
+	// Archer: Don't disable this otherwise the game crashes when casting a spell on AA's turn
 	for (long i = 0; i < MONSTERS_AMOUNT; i++) {
 		CreatureSpellPowerMultiplier[i] = 1;
 		CreatureSpellPowerDivider[i] = 1;
 		CreatureSpellPowerAdder[i] = 0;
 	}
+
 	memset(DalionsGuards,-1,MONSTERS_AMOUNT*4);
 	//DalionsGuards[230] = 29;
 
@@ -8682,14 +8713,14 @@ void CreateAdditionalTables()
 	
 	/// debug
 	// WriteHook((void*)0x005A0140, (void*)Creature_SpellPower_hook, HOOKTYPE_JUMP);
-	Z_Amethyst->WriteLoHook(0x005A0145, Creature_SpellPower_5A0145);
+	// Z_Amethyst->WriteLoHook(0x005A0145, Creature_SpellPower_5A0145); // Most important spell power hook - Disabled by Archer 16 Feb 2024
 
 	//WriteHook((void*)0x75D0F2,(void*)f_75D0F2_Hook, HOOKTYPE_JUMP);	//hasSantaGuards
-	WriteHook((void*)0x756B1F,(void*)f_756B1F_Hook, HOOKTYPE_JUMP);
+	WriteHook((void*)0x756B1F,(void*)f_756B1F_Hook, HOOKTYPE_JUMP); // Archer: Monster Kickback
 	
 	//WriteHook((void*)0x447ED9,(void*)f_447ED9_Hook, HOOKTYPE_JUMP);
-	WriteHook((void*)0x4650dd,(void*)f_4650dd_Hook, HOOKTYPE_JUMP);
-	WriteHook((void*)0x75C96C,(void*)f_75C96C_Hook, HOOKTYPE_JUMP);
+	WriteHook((void*)0x4650dd,(void*)f_4650dd_Hook, HOOKTYPE_JUMP); // Archer: Enchanter
+	WriteHook((void*)0x75C96C,(void*)f_75C96C_Hook, HOOKTYPE_JUMP); // Archer: Sorceress
 	
 	
 	//WriteHook((void*)0x75CA39,(void*)f_75CA39_Hook, HOOKTYPE_JUMP);	
@@ -8698,6 +8729,7 @@ void CreateAdditionalTables()
 
 	
 	//spells
+	// Archer: This bit is important. It prevents the game from crashing on mouse hovering - why?
 	*(int*) (0x00448263 +3) = (int) spell_1_jumptable;
 	  memset(spell_1_table,0x09,MONSTERS_AMOUNT);
 	  if(first_time)
@@ -8723,8 +8755,10 @@ void CreateAdditionalTables()
 	
 	  *(char*)0x42146F = 0;
 	   *(int*)0x421479 = (int)spell_3_table;
+	
 
 	//skel
+		/* Disabled by Archer 16 Feb 2024
 		for (int i=196; i!=MONSTERS_AMOUNT; i++) skeltrans[i]=56;
 	    memcpy((char*)skeltrans,(void*)(0x7C3D00),197*4);
 	    
@@ -8736,6 +8770,7 @@ void CreateAdditionalTables()
 		*(int*)(0x566FD1+3) = (int)skeltrans;
 
 		*(int*)(0x5664C9) = MONSTERS_AMOUNT;
+		*/
 
 	//upgtable
 
@@ -8827,7 +8862,6 @@ void CreateAdditionalTables()
 	//aftercast_abilities_table[197] = ACAST_ACID;
 	//attack_abilities_table[197]=ATT_VAMPIRE;
 
-
 	WriteHook((void*)0x0076735D, (void*)IsAngel3_Minus, HOOKTYPE_JUMP); //2021-03-14
 	WriteHook((void*)0x004482D3, (void*)Angel4_004482D3, HOOKTYPE_JUMP);
 	//WriteHook((void*)0x004211b3, (void*)IsAngel5_AI, HOOKTYPE_JUMP);
@@ -8841,7 +8875,7 @@ void CreateAdditionalTables()
 	WriteHook((void*)0x004211B3, (void*)AngDem1, HOOKTYPE_JUMP);
 	WriteHook((void*)0x004470FD, (void*)AngDem2, HOOKTYPE_JUMP);
 	WriteHook((void*)0x00447480, (void*)AngDem3, HOOKTYPE_JUMP);
-	WriteHook((void*)0x00491E93, (void*)AngDem4, HOOKTYPE_JUMP);
+	WriteHook((void*)0x00491E93, (void*)AngDem4, HOOKTYPE_JUMP); // Anchangel battle hint proc. Disabling it won't fix the hint. 
 	WriteHook((void*)0x00492065, (void*)AngDem5, HOOKTYPE_JUMP);
 
 	Demonology_Table[51] = 48;
@@ -8929,6 +8963,8 @@ void CreateAdditionalTables()
 	WriteHook((void*) 0x762940, (void*)StrikeAndReturn2, HOOKTYPE_JUMP);
 	WriteHook((void*) 0x421C0D, (void*)StrikeAndReturn3, HOOKTYPE_JUMP);
 	*/
+
+	// These Strike and Retunr hooks are important - Archer30
 	Z_Amethyst->WriteLoHook(0x00762940, harpy_hook_00762940);
 	Z_Amethyst->WriteLoHook(0x0075E063, harpy_hook_0075E063);
 	StrikeAndReturn_Table[72] = StrikeAndReturn_Table[73] = 1;
@@ -8972,7 +9008,7 @@ void CreateAdditionalTables()
 	//WriteHook((void*)0x75D10A, (void*)MakeDalionsGuards, HOOKTYPE_CALL);
 	WriteHook((void*)0x75D10A, (void*)MakeDalionsGuards, HOOKTYPE_JUMP);
 
-	WriteHook((void*)0x4755E7, (void*)hook_004755E7, HOOKTYPE_JUMP);
+	WriteHook((void*)0x4755E7, (void*)hook_004755E7, HOOKTYPE_JUMP); // Archer: Proc action user action? Not sure what
 	isAimedCaster_Table[134] = 1;
 	isFaerieDragon_Table[134] = 1;
 	isAmmoCart_Table[148] = 1;
@@ -9000,6 +9036,7 @@ void CreateAdditionalTables()
 	WriteHook((void*)0x441386, (void*)ThreeHeadedAttack, HOOKTYPE_JUMP);
 	WriteHook((void*)0x4487E9, (void*)ThreeHeadedAttack2, HOOKTYPE_JUMP);
 
+	/* Disabled by Archer 16 Feb 2024
 	Z_Amethyst->WriteLoHook(0x004690B8, rebirth_004690B8);
 	Z_Amethyst->WriteLoHook(0x004690CF, rebirth_004690CF);
 	WriteHook((void*)0x75E108, (void*)Rebirth_Plus, HOOKTYPE_JUMP);
@@ -9007,12 +9044,12 @@ void CreateAdditionalTables()
 	respawn_table_fraction[0x83] = 0.2f; respawn_table_fraction[0x9e] = 0.2f; 
 	respawn_table_sure[0x83] = 0.2f; respawn_table_sure[0x9e] = 0.0f;
 
-
 	WriteHook((void*)0x75D4A0, (void*)ReduceTargetDefense, HOOKTYPE_JUMP);
 	WriteHook((void*)0x4422E3, (void*)ReduceTargetDefense2, HOOKTYPE_JUMP);
 	ReduceTargetDefense_Table[96]  = 40;
 	ReduceTargetDefense_Table[97]  = 60;
 	ReduceTargetDefense_Table[156] = 80;
+	*/
 
 	WriteHook((void*) 0x441ADE, (void*) Before_Melee, HOOKTYPE_JUMP);
 	// WriteHook((void*) 0x74C82A, (void*) CallTrigger, HOOKTYPE_CALL);
@@ -9021,7 +9058,7 @@ void CreateAdditionalTables()
 	isConstruct_Table[30] = isConstruct_Table[31] = isConstruct_Table[32] = isConstruct_Table[33] = 1;
 	isConstruct_Table[116] = isConstruct_Table[117] = isConstruct_Table[133] = 1;
 
-	WriteHook((void*) 0x004E6307, (void*)hook_004E6307, HOOKTYPE_JUMP);
+	WriteHook((void*) 0x004E6307, (void*)hook_004E6307, HOOKTYPE_JUMP); // Archer: hero spell specialty effect
 
 
 	for (int i = 0; i < MONSTERS_AMOUNT; ++i)
@@ -9045,24 +9082,26 @@ void CreateAdditionalTables()
 	Z_Amethyst->WriteLoHook(0x00760412, z_hook_00760412);
 
 	FillTables();
+
+	/* Disabled by Archer 16 Feb 2024
 	if(!DisableNecromancyFeatures)
 		InitNecromancy();
 
 	if (FilterNecromancyCreatures)
 		Z_Amethyst->WriteLoHook(0x00476F67, z_hook_00476F67);
+	*/
 
-	Z_Amethyst->WriteLoHook(0x00492A7D, z_Hook_00492A7D);
+	Z_Amethyst->WriteLoHook(0x00492A7D, z_Hook_00492A7D); // Anchangel battle hint proc. Disabling it won't fix the hint. 
 
-	Z_Amethyst->WriteLoHook(0x004645BA, z_hook_004645BA);
-	Z_Amethyst->WriteLoHook(0x0046453E, z_hook_0046453E);
+	Z_Amethyst->WriteLoHook(0x004645BA, z_hook_004645BA); // Archer: Check good morale
+	Z_Amethyst->WriteLoHook(0x0046453E, z_hook_0046453E); // same
 
 	Z_Amethyst->WriteHiHook(0x0071D04E, SPLICE_, EXTENDED_, CDECL_, CrExpBon_DwarfResistFriendly_WoG_hook);
 	
 	Z_Amethyst->WriteLoHook(0x00756D06, z_hook_00756D06);
 	isHellHydra[157] = 1;
 
-	Z_Amethyst->WriteLoHook(0x004476E9, z_hook_004476E9);
-
+	// Z_Amethyst->WriteLoHook(0x004476E9, z_hook_004476E9); // Disabled by Archer 16 Feb 2024. Disabling this hook unlocks BM:U and Santa Gremlin's damage
 
 	Z_Amethyst->WriteHiHook(0x0076DB0C, SPLICE_, EXTENDED_, CDECL_, NPCDeathStare_hook);
 

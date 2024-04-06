@@ -17,7 +17,7 @@ struct _CrState_ {
 	long  CostRes[7];//  (42B73A)
 	long  Fight;     //
 	long  AIvalue;   //
-	long  Grow;      //  начальное количество монстров для найма
+	long  Grow;      //  РЅР°С‡Р°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РјРѕРЅСЃС‚СЂРѕРІ РґР»СЏ РЅР°Р№РјР°
 	long  HGrow;     //
 	long  HitPoints; //
 	long  Speed;     //
@@ -26,7 +26,7 @@ struct _CrState_ {
 	long  DamageL;   //
 	long  DamageH;   //
 	long  NShots;    //
-	long  HasSpell;  //  - сколько раз колдует
+	long  HasSpell;  //  - СЃРєРѕР»СЊРєРѕ СЂР°Р· РєРѕР»РґСѓРµС‚
 	long  AdvMapL;   //
 	long  AdvMapH;   //
 } CrState[MONSTERS_AMOUNT];
@@ -178,9 +178,9 @@ char* experience_0x00860550_table = experience_0x008602B0_table + 672; //why suc
 //char experience_modifier_table[(MONSTERS_AMOUNT + 1 + 42 + 1) * 20];
 
 
-int i_ExistingMonstr = 197;                  /* кол-во стандартных монстров */
+int i_ExistingMonstr = 197;                  /* РєРѕР»-РІРѕ СЃС‚Р°РЅРґР°СЂС‚РЅС‹С… РјРѕРЅСЃС‚СЂРѕРІ */
 
-//адреса где встречаются указатели на структуру монстров
+//Р°РґСЂРµСЃР° РіРґРµ РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ СѓРєР°Р·Р°С‚РµР»Рё РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ РјРѕРЅСЃС‚СЂРѕРІ
 int p_AddressOfPatchStrMonstr[] = {
 0x0047ADD1, 0x006747B0, 0x007505D2, 0x007508E0, 
 0x00756455, 0x00756473, 0x00756482, 0x00756492, 
@@ -190,19 +190,19 @@ int p_AddressOfPatchStrMonstr[] = {
 0x0078BFAC
 };
 
-// адреса где встречаются указатели на структуру CrAnim
+// Р°РґСЂРµСЃР° РіРґРµ РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ СѓРєР°Р·Р°С‚РµР»Рё РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ CrAnim
 int p_AddressOfPatchCrAnim [] = {0x50CC04, 0x67FF74};
 
-// адреса где встречаются указатели на структуру св-в при атаке
+// Р°РґСЂРµСЃР° РіРґРµ РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ СѓРєР°Р·Р°С‚РµР»Рё РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ СЃРІ-РІ РїСЂРё Р°С‚Р°РєРµ
 int p_AddressOfPatchAtack [] = {0x440237};
 
-// адреса где встречаются указатели на структуру св-в при защите
+// Р°РґСЂРµСЃР° РіРґРµ РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ СѓРєР°Р·Р°С‚РµР»Рё РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ СЃРІ-РІ РїСЂРё Р·Р°С‰РёС‚Рµ
 int p_AddressOfPatchDefend [] = {0x440916};
 
-// адреса где встречаются указатели на структуру св-в 
+// Р°РґСЂРµСЃР° РіРґРµ РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ СѓРєР°Р·Р°С‚РµР»Рё РЅР° СЃС‚СЂСѓРєС‚СѓСЂСѓ СЃРІ-РІ 
 int p_AddressOfPatchOption [] = {0x447475};
 
-// адрес таблицы снарядов
+// Р°РґСЂРµСЃ С‚Р°Р±Р»РёС†С‹ СЃРЅР°СЂСЏРґРѕРІ
 //int p_AddressOfShell [] = {0x3DA9F};
 
 
@@ -364,17 +364,17 @@ int i_OffERM [] = {0x00, 0x04, 0x10, 0x14, 0x14, 0x14, 0x14, 0x14,
 };
 
 
-//новая таблица ссылок на имена существ в  ед. числе (29834C0h/43529408):
+//РЅРѕРІР°СЏ С‚Р°Р±Р»РёС†Р° СЃСЃС‹Р»РѕРє РЅР° РёРјРµРЅР° СЃСѓС‰РµСЃС‚РІ РІ  РµРґ. С‡РёСЃР»Рµ (29834C0h/43529408):
 int p_AddressOfNames[] =   {0x00733459, 0x0073351B, 0x00750C72, 0x00750D14, 
 							0x00750D9F, 0x00752280, 0x0047AE2B, 0x0047ADF6, 
 							0x0047B12D}; 
-//новая таблица ссылок на имена существ во мн. числе (29834C0h/43529408):
+//РЅРѕРІР°СЏ С‚Р°Р±Р»РёС†Р° СЃСЃС‹Р»РѕРє РЅР° РёРјРµРЅР° СЃСѓС‰РµСЃС‚РІ РІРѕ РјРЅ. С‡РёСЃР»Рµ (29834C0h/43529408):
 
 int p_AddressOfPlNames[] = {0x0073348E, 0x00733547, 0x00750CA1, 0x00750D43, 
 							0x00750DB5, 0x007522B5, 0x0076C532, 0x0076C5AC, 
 							0x0047AEBF, 0x0047AE86, 0x0047B10D};
 
-//новая таблица ссылок на описания существ (2984460h/43533408):
+//РЅРѕРІР°СЏ С‚Р°Р±Р»РёС†Р° СЃСЃС‹Р»РѕРє РЅР° РѕРїРёСЃР°РЅРёСЏ СЃСѓС‰РµСЃС‚РІ (2984460h/43533408):
 int p_AddressOfDesc [] = {  0x007334C3, 0x00733573, 0x00750CD0, 0x00750D72, 
 							0x00750DCB, 0x007522EB, 0x0047B094, 0x0047B058, 
 							0x0047B0ED};
@@ -696,7 +696,7 @@ _MonNames_ MonNames_Var[MONSTERS_AMOUNT];
 void CreateNewTable()
 {    
 
-	//копирование старых таблиц 
+	//copying old tables
 		for(int i=197; i!=MONSTERS_AMOUNT;i++)
 		{
 			new_monsters[i].defname = (char*)malloc(16);
@@ -720,7 +720,7 @@ void CreateNewTable()
 
 		memcpy((void*)new_monsters,(void*)0x7D0C90,sizeof(MONSTER_PROP)*197);
 		memcpy((void*)new_cranim,(void*)0x7B8610,sizeof(CRANIM)*197);
-	//перенос таблиц
+	//table transfer
 
 		// werewolf fix
 		*(int*)(0x00767619 + 1) = ((int)new_monsters) + 0x5834;
@@ -760,7 +760,7 @@ void CreateNewTable()
 			*(int*)(p_AddressOfPatchCrAnim[i]) = (int)new_cranim;
 		}
 
-	//снятие ограничений с ERM
+	//removal of restrictions from ERM
 		for(int i=0; i!=(sizeof(p_AddressOfERM)/4); i++)
 		{
 			*(int*)(p_AddressOfERM[i]) = (((int)new_monsters) + i_OffERM[i]);
@@ -770,7 +770,7 @@ void CreateNewTable()
 		{
 			*(int*)(p_AddressOfERMLimit[i]) =  (int)MONSTERS_AMOUNT;
 		}
-	//новые таблицы для имен и всего такого
+	//new tables for names and such
 		
 		/*
 		for(int i=0; i!=(sizeof(names)/4); i++)
@@ -784,6 +784,7 @@ void CreateNewTable()
 		}
 		*/
 
+		// Archer: LoadCrTraitsRow
 		Z_Amethyst->WriteLoHook(0x0047AE21, fake_new_hook);
 		Z_Amethyst->WriteLoHook(0x0047AEB2, fake_new_hook);
 		Z_Amethyst->WriteLoHook(0x0047B084, fake_new_hook);
@@ -831,7 +832,7 @@ void CreateNewTable()
 		*/
 
 
-	//загрузка из конфига
+	//loading from config
 		*(int*)0x47AD78 = conf_creatures; //zcraits
 		*(int*)0x50CBB8 = conf_creatures;
 

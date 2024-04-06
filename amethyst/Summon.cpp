@@ -71,32 +71,32 @@ static Byte* SC_MStruct;
 Byte* SammonCreatureEx(int type, int num, int pos, int side, int slot, int redraw, int Flags)
 {
 //#include "templ.h"
-    SC_Type = type; // тип существа
-    SC_Num = num; // число существ
-    SC_Pos = pos; // позиция на поле
-    SC_Side = side; // сторона игрока (0,1)
-    SC_Slot = slot; // слот в армии героя
-    SC_Redraw = redraw; // перерисовывать
-    SC_Flags = Flags; // флаги вызванного существа
+    SC_Type = type; // С‚РёРї СЃСѓС‰РµСЃС‚РІР°
+    SC_Num = num; // С‡РёСЃР»Рѕ СЃСѓС‰РµСЃС‚РІ
+    SC_Pos = pos; // РїРѕР·РёС†РёСЏ РЅР° РїРѕР»Рµ
+    SC_Side = side; // СЃС‚РѕСЂРѕРЅР° РёРіСЂРѕРєР° (0,1)
+    SC_Slot = slot; // СЃР»РѕС‚ РІ Р°СЂРјРёРё РіРµСЂРѕСЏ
+    SC_Redraw = redraw; // РїРµСЂРµСЂРёСЃРѕРІС‹РІР°С‚СЊ
+    SC_Flags = Flags; // С„Р»Р°РіРё РІС‹Р·РІР°РЅРЅРѕРіРѕ СЃСѓС‰РµСЃС‚РІР°
     __asm {
-        //005A775B 8B83F4000000   mov    eax,[ebx+000000F4] ebx -> генерирующий монстр
+        //005A775B 8B83F4000000   mov    eax,[ebx+000000F4] ebx -> РіРµРЅРµСЂРёСЂСѓСЋС‰РёР№ РјРѕРЅСЃС‚СЂ
         mov    ecx, 0x699420
         mov    ecx, [ecx]
         push   SC_Redraw
         push   SC_Flags
-        push   SC_Pos     //edx  = координата клетки поля
-        push   SC_Num     //ecx  = количество
-        push   SC_Type    //00000030 = номер монстра
-        push   SC_Side    //eax = номер игрока (0,1)
-    //005A776D 8BCF           mov    ecx,edi -> комбат менеждер
+        push   SC_Pos     //edx  = РєРѕРѕСЂРґРёРЅР°С‚Р° РєР»РµС‚РєРё РїРѕР»СЏ
+        push   SC_Num     //ecx  = РєРѕР»РёС‡РµСЃС‚РІРѕ
+        push   SC_Type    //00000030 = РЅРѕРјРµСЂ РјРѕРЅСЃС‚СЂР°
+        push   SC_Side    //eax = РЅРѕРјРµСЂ РёРіСЂРѕРєР° (0,1)
+    //005A776D 8BCF           mov    ecx,edi -> РєРѕРјР±Р°С‚ РјРµРЅРµР¶РґРµСЂ
     mov    eax, 0x479A30
     call   eax
     //005A776F E8BC22EDFF     call   H3WOG.00479A30
     mov    edx, eax
-    mov    SC_MStruct, eax  //-> ук. на нового монстра
+    mov    SC_MStruct, eax  //-> СѓРє. РЅР° РЅРѕРІРѕРіРѕ РјРѕРЅСЃС‚СЂР°
     or edx, edx
     je     l_notset
-    mov    eax, SC_Slot     //[ebp+0C] = номер слота в армии героя
+    mov    eax, SC_Slot     //[ebp+0C] = РЅРѕРјРµСЂ СЃР»РѕС‚Р° РІ Р°СЂРјРёРё РіРµСЂРѕСЏ
 //005A7779 8BCF           mov    ecx,edi
 mov[edx + 0x5C], eax
 ////    mov    ecx,0x699420
@@ -147,15 +147,15 @@ void MakeMonGuards(Byte* man, Byte* mon, int SG_stack, int type)
     /*
     if (hp != 0) {
         type = (hp->Spec / 2) * 14;
-        if (type == 14) type = 16; // Кентавры на Гномов
-        if (type == 112) type = 118; // Элементали на Пикселей
-        if ((hp->Spec / 2) == 1) { // Рампарт
+        if (type == 14) type = 16; // РљРµРЅС‚Р°РІСЂС‹ РЅР° Р“РЅРѕРјРѕРІ
+        if (type == 112) type = 118; // Р­Р»РµРјРµРЅС‚Р°Р»Рё РЅР° РџРёРєСЃРµР»РµР№
+        if ((hp->Spec / 2) == 1) { // Р Р°РјРїР°СЂС‚
             num = num / 2;
             if (num == 0) num = 1;
         }
     }
     else {
-        type = 28; // гремлин
+        type = 28; // РіСЂРµРјР»РёРЅ
     }*/
     //CrExpBon::SGBonus(mon, &type, &num);
     if (M2B_FindPos(Code, &x, &y) == -1) { /* Error(); */ RETURNV }

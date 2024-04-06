@@ -1,75 +1,87 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Msbuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: Katalog pośredni (Release\) zawiera pliki udostępnione z innego projektu (amethyst.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (amethyst.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   tables.cpp
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\__include__\H3API\single_header\H3API.hpp(26198,15): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\patcher_x86_commented.hpp(1183,1): warning C4005: "CALL_0": ponowna definicja makra
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\patcher_x86_commented.hpp(79): message : zobacz poprzednią definicję „CALL_0”
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(436,33): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(468,33): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(596,48): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(598,82): warning C4244: "+=": konwersja z "double" do "float", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(601,51): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(603,88): warning C4244: "+=": konwersja z "double" do "float", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(794,46): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(1029,7): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(519,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(1053,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(1054,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(1045,15): warning C4101: "c": lokalna zmienna, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(1751,3): warning C4102: "zzz_if_esi": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(1760,3): warning C4102: "zzz__if_eax": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(1841,1): warning C4102: "have_ability": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(1929,1): warning C4102: "have_ability": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2158,17): warning C4244: "inicjowanie": konwersja z "float" do "long", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2163,6): warning C4244: "+=": konwersja z "float" do "WORD", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2164,38): warning C4244: "=": konwersja z "long" do "WORD", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2146,6): warning C4102: "zzz__improper_target": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2568,1): warning C4102: "right": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2628,1): warning C4102: "loc_0043F723": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2701,1): warning C4102: "some_chance": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2722,18): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2723,10): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2730,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(3720,1): warning C4102: "lab_004212D9": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(4157,1): warning C4102: "lab4": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(4164,1): warning C4102: "lab3": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5107,3): warning C4102: "z_null": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5238,3): warning C4102: "exit": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5394,1): warning C4102: "_isHellSteed": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5426,1): warning C4102: "_isHellSteed": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5449,1): warning C4102: "_isHellSteed": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5472,1): warning C4102: "_isSorceress": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5496,1): warning C4102: "_isEnchanter": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5527,1): warning C4102: "_isEnchanter": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5549,1): warning C4102: "_hasSantaGuards": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5630,1): warning C4102: "_isGhost": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5647,38): warning C4244: "*=": konwersja z "float" do "int", możliwa utrata danych
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(5687,2): warning C4102: "mop_007572FA": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(6702,3): warning C4102: "z_okay": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(6750,4): warning C4102: "stage_0": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(7166,1): warning C4102: "Spell_Can_Cast": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(7185,3): warning C4102: "Spell_None": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(7374,9): warning C4102: "LABEL_16": etykieta, do której nie istnieje odwołanie
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(7508,49): warning C4018: ">=": niezgodność typu ze znakiem/bez znaku
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8344,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8345,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8336,74): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8341,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8399,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8399,71): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8399,122): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8400,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8400,71): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8400,122): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8375,72): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8389,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8403,20): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8818,50): warning C4305: "=": obcięcie z "double" do "float"
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8883,55): warning C4309: "=": obcięcie stałej wartości
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8591,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(8592,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(2270): warning C4715: "z_hook_004476E9”: niewszystkie ścieżki kodu zwracają wartość
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(1695): warning C4733: Przypisanie w wbudowanym kodzie asemblera do "FS:0": obsługa nie jest zarejestrowana jako bezpieczna obsługa
-E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\amethyst\tables.cpp(1731): warning C4733: Przypisanie w wbudowanym kodzie asemblera do "FS:0": obsługa nie jest zarejestrowana jako bezpieczna obsługa
-     Trwa tworzenie biblioteki E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\Release\amethyst2_4.lib i obiektu E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\Release\amethyst2_4.exp
-  LINK : określono opcję /LTCG, lecz generowanie kodu nie było wymagane; usuń opcję /LTCG z wiersza polecenia konsolidatora w celu podwyższenia wydajności konsolidatora
-  amethyst.vcxproj -> E:\DEV\__REPOSITORY__\_h3era_Plugins_\Amethyst2\Release\amethyst2_4.dll
+D:\Documents\GitHub\Amethyst-2\amethyst\stdafx.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+  (compiling source file 'tables.cpp')
+  
+D:\Documents\GitHub\H3API\single_header\H3API.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+  (compiling source file 'tables.cpp')
+  
+D:\Documents\GitHub\H3API\single_header\H3API.hpp(21662,15): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'tables.cpp')
+  
+D:\Documents\GitHub\Amethyst-2\amethyst\patcher_x86_commented.hpp(1183,1): warning C4005: 'CALL_0': macro redefinition
+  (compiling source file 'tables.cpp')
+  D:\Documents\GitHub\Amethyst-2\amethyst\patcher_x86_commented.hpp(79,1):
+  see previous definition of 'CALL_0'
+  
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(436,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(468,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(596,48): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(598,49): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(601,51): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(603,52): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(794,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(1029,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(519,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(1053,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(1054,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(1045,15): warning C4101: 'c': unreferenced local variable
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(1751,3): warning C4102: 'zzz_if_esi': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(1760,3): warning C4102: 'zzz__if_eax': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(1841,1): warning C4102: 'have_ability': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(1929,1): warning C4102: 'have_ability': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2158,17): warning C4244: 'initializing': conversion from 'float' to 'long', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2162,70): warning C4244: '+=': conversion from 'float' to 'WORD', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2164,38): warning C4244: '=': conversion from 'long' to 'WORD', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2146,6): warning C4102: 'zzz__improper_target': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2568,1): warning C4102: 'right': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2628,1): warning C4102: 'loc_0043F723': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2701,1): warning C4102: 'some_chance': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2722,18): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2723,10): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2730,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(3720,1): warning C4102: 'lab_004212D9': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(4157,1): warning C4102: 'lab4': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(4164,1): warning C4102: 'lab3': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5107,3): warning C4102: 'z_null': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5238,3): warning C4102: 'exit': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5394,1): warning C4102: '_isHellSteed': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5426,1): warning C4102: '_isHellSteed': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5449,1): warning C4102: '_isHellSteed': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5472,1): warning C4102: '_isSorceress': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5496,1): warning C4102: '_isEnchanter': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5527,1): warning C4102: '_isEnchanter': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5549,1): warning C4102: '_hasSantaGuards': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5630,1): warning C4102: '_isGhost': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5647,37): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(5687,2): warning C4102: 'mop_007572FA': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(6702,3): warning C4102: 'z_okay': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(6750,4): warning C4102: 'stage_0': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(7166,1): warning C4102: 'Spell_Can_Cast': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(7185,3): warning C4102: 'Spell_None': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(7374,1): warning C4102: 'LABEL_16': unreferenced label
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(7508,49): warning C4018: '>=': signed/unsigned mismatch
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8344,21): warning C4018: '<': signed/unsigned mismatch
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8345,21): warning C4018: '<': signed/unsigned mismatch
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8336,74): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8341,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8399,20): warning C4018: '<': signed/unsigned mismatch
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8399,71): warning C4018: '<': signed/unsigned mismatch
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8399,122): warning C4018: '<': signed/unsigned mismatch
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8400,20): warning C4018: '<': signed/unsigned mismatch
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8400,71): warning C4018: '<': signed/unsigned mismatch
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8400,122): warning C4018: '<': signed/unsigned mismatch
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8375,72): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8389,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8403,20): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8853,47): warning C4305: '=': truncation from 'double' to 'float'
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8917,55): warning C4309: '=': truncation of constant value
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8619,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(8620,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(1695,1): warning C4733: Inline asm assigning to 'FS:0': handler not registered as safe handler
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(1731,1): warning C4733: Inline asm assigning to 'FS:0': handler not registered as safe handler
+D:\Documents\GitHub\Amethyst-2\amethyst\tables.cpp(2270,1): warning C4715: 'z_hook_004476E9': not all control paths return a value
+     Creating library D:\Games\HoMM 3 ERA Archer\Mods\Third Upgrade Mod Reborn\EraPlugins\amethyst2_4.lib and object D:\Games\HoMM 3 ERA Archer\Mods\Third Upgrade Mod Reborn\EraPlugins\amethyst2_4.exp
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+  amethyst.vcxproj -> D:\Games\HoMM 3 ERA Archer\Mods\Third Upgrade Mod Reborn\EraPlugins\amethyst2_4.dll

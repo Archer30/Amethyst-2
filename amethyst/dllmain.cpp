@@ -1,4 +1,4 @@
-// dllmain.cpp: îïðåäåëÿåò òî÷êó âõîäà äëÿ ïðèëîæåíèÿ DLL.
+// dllmain.cpp: Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÑ‚ Ñ‚Ð¾Ñ‡ÐºÑƒ Ð²Ñ…Ð¾Ð´Ð° Ð´Ð»Ñ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ DLL.
 
 
 // #include "..\__include\era.h"
@@ -125,7 +125,7 @@ void  __stdcall load_things_late(PEvent e) {
 	// Z_Amethyst->WriteLoHook(0x004E7230, hook_004E7230);
 	// Z_Amethyst->WriteLoHook(0x00443DBB,hook_00443DBB);
 
-	Z_Amethyst->WriteLoHook(0x4729E8, hook_ecx_batman_dialogue_fix);
+	Z_Amethyst->WriteLoHook(0x4729E8, hook_ecx_batman_dialogue_fix); // Archer: Wth?
 	Z_Amethyst->WriteLoHook(0x5A9547, hook_ecx_batman_dialogue_fix);
 	Z_Amethyst->WriteLoHook(0x462E42, hook_ecx_batman_fix);
 	Z_Amethyst->WriteLoHook(0x4683AB, hook_ecx_batman_fix);
@@ -133,7 +133,7 @@ void  __stdcall load_things_late(PEvent e) {
 	Z_Amethyst->WriteLoHook(0x462EB6, hook_esi_batman_fix);
 
 	// Z_Amethyst->WriteLoHook(0x005A7A6E, hook_005A7A6E);
-	Z_Amethyst->WriteLoHook(0x005A7A5A, hook_005A7A5A);
+	Z_Amethyst->WriteLoHook(0x005A7A5A, hook_005A7A5A); // Acher: Resurrect animation
 
 	// Z_Amethyst->WriteLoHook(0x005A7B77, hook_005A7B77);
 }
@@ -926,10 +926,10 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 			RegisterHandler(drop_html_creature_list, "OnAfterCreateWindow");
 			RegisterHandler(load_things_late, "OnAfterCreateWindow");
 
-
+			/* Disabled by Archer 15 Feb 2024
 			RegisterHandler(ranged_retaliation_event_30303, "OnBeforeBattleAction");
 			RegisterHandler(ranged_retaliation_event_30304, "OnAfterBattleAction");
-
+			*/
 
 			RegisterHandler(battle_late_begin, "OnBattleRound");
 			RegisterHandler(battle_start_event, "OnBeforeBattleUniversal");

@@ -115,6 +115,7 @@ _LHF_(hook_UN_G1_reset) {
 }
 
 void MiscCreatureHooks_apply() {
+	// Archer: erm UN:G1
 	Z_Amethyst->WriteLoHook(0x00733409, hook_UN_G1_set);
 	Z_Amethyst->WriteLoHook(0x007334D5, hook_UN_G1_reset);
 
