@@ -8633,17 +8633,19 @@ void CreateAdditionalTables()
 		}
 	}
 
-	Z_Amethyst->WriteLoHook(0x005A03A8, hook_005A03A8);
-	Z_Amethyst->WriteLoHook(0x00440245, hook_00440245);
-	Z_Amethyst->WriteLoHook(0x00440BDB, hook_00440BDB);
+	/* Heroic - disabed by Archer30 8 Jun 2024
+	Z_Amethyst->WriteLoHook(0x005A03A8, hook_005A03A8); // Archer: Cast spell
+	Z_Amethyst->WriteLoHook(0x00440245, hook_00440245); // Archer: After Hit spells
+	Z_Amethyst->WriteLoHook(0x00440BDB, hook_00440BDB); // Archer: After attack abilities
+	*/
 
 	memset(Spell_Immunities,0,sizeof(Spell_Immunities));
-	Z_Amethyst->WriteLoHook(0x0071CC52,z_hook_0071CC52);
+	Z_Amethyst->WriteLoHook(0x0071CC52,z_hook_0071CC52); // Archer: dwarf resistance
 
 	// Z_Amethyst->WriteLoHook(0x005A7B77,hook_next_creature);
 	// 00478CC3
 
-	Z_Amethyst->WriteLoHook(0x0075F840, z_hook_0075F840);
+	Z_Amethyst->WriteLoHook(0x0075F840, z_hook_0075F840); // Archer: erm patches
 	Z_Amethyst->WriteLoHook(0x0075642C, z_hook_0075642C);
 
 	//majaczek tables
@@ -8729,7 +8731,7 @@ void CreateAdditionalTables()
 
 	
 	//spells
-	// Archer: This bit is important. It prevents the game from crashing on mouse hovering - why?
+	// Archer: This bit is important. It prevents the game from crashing on mouse hovering
 	*(int*) (0x00448263 +3) = (int) spell_1_jumptable;
 	  memset(spell_1_table,0x09,MONSTERS_AMOUNT);
 	  if(first_time)
@@ -8855,7 +8857,6 @@ void CreateAdditionalTables()
 
 		WriteHook((void*)0x4225D6,(void*)f4225D6_Hook,HOOKTYPE_JUMP);
 		WriteHook((void*)0x442E61,(void*)f442E61_Hook,HOOKTYPE_JUMP);
-	
 	//pegasi
 
 	   
@@ -8891,14 +8892,16 @@ void CreateAdditionalTables()
 	Z_Amethyst->WriteLoHook(0x004470B5, hook_004470B5_Demonology);
 
 	//WriteHook((void*)0x4470B8, (void*)Gate1, HOOKTYPE_JUMP);
-	WriteHook((void*)0x5A78B5, (void*)Gate2, HOOKTYPE_JUMP);
+	// WriteHook((void*)0x5A78B5, (void*)Gate2, HOOKTYPE_JUMP); // Disabled by Archer30 6 Jun 2024
 
+	/* Disabled by Archer30 6 Jun 2024
 	WriteHook((void*)0x75DE5B, (void*) Regeneration,HOOKTYPE_JUMP);
 	RegenerationChance_Table[60]  = 100; RegenerationHitPoints_Table[60]  = 50;
 	RegenerationChance_Table[61]  = 100; RegenerationHitPoints_Table[61]  = 50;
 	RegenerationChance_Table[144] = 100; RegenerationHitPoints_Table[144] = 50;
 	RegenerationChance_Table[157] = 40;  RegenerationHitPoints_Table[157] = 50;
 	for (int i =174; i<= 191;i++)		 RegenerationHitPoints_Table[i]   = 50;
+	*/
 
 
 	WriteHook((void*)0x4650D0, (void*)ManaDrainPlus,  HOOKTYPE_JUMP);
@@ -8990,8 +8993,12 @@ void CreateAdditionalTables()
 
 	//WriteHook((void*)0x4483C4, (void*)Spells, HOOKTYPE_JUMP);
 	//WriteHook((void*)0x4476C8, (void*)Spells2, HOOKTYPE_JUMP);
+
+	/* Disabled by Archer 8 Jun 2024
 	WriteHook((void*)0x75D0F2, (void*)Spells3, HOOKTYPE_JUMP);
 	WriteHook((void*)0x75CDE2, (void*)Spells4, HOOKTYPE_JUMP); // todo
+	*/
+
 	Spells_Table[173] = 16;
 	Spells_Table[174] = Spells_Table[183] = 37;
 	Spells_Table[175] = Spells_Table[184] = 27;
@@ -9002,11 +9009,14 @@ void CreateAdditionalTables()
 	Spells_Table[180] = Spells_Table[189] = 46;
 	Spells_Table[181] = Spells_Table[190] = 53;
 	Spells_Table[182] = Spells_Table[191] = 58;
+
+	/* Disabled by Archer 8 Jun 2024
 	WriteHook((void*)0x75CEDD, (void*)SantaFixPlus, HOOKTYPE_JUMP);
 	//WriteHook((void*)0x75D10A, (void*)f_75D10A_Hook, HOOKTYPE_JUMP);
 	//*((int*)(0x75D10A + 1)) = (int)(void*)MakeDalionsGuards;
 	//WriteHook((void*)0x75D10A, (void*)MakeDalionsGuards, HOOKTYPE_CALL);
 	WriteHook((void*)0x75D10A, (void*)MakeDalionsGuards, HOOKTYPE_JUMP);
+	*/
 
 	WriteHook((void*)0x4755E7, (void*)hook_004755E7, HOOKTYPE_JUMP); // Archer: Proc action user action? Not sure what
 	isAimedCaster_Table[134] = 1;
@@ -9014,7 +9024,7 @@ void CreateAdditionalTables()
 	isAmmoCart_Table[148] = 1;
 	isPassive_Table[148] = 1;
 	//WriteHook((void*)0x422A86, (void*)AmmoCart_422A86_Hook, HOOKTYPE_JUMP);
-	WriteHook((void*)0x43F718, (void*)AmmoCart_43F718_Hook, HOOKTYPE_JUMP);
+	// WriteHook((void*)0x43F718, (void*)AmmoCart_43F718_Hook, HOOKTYPE_JUMP); // Disabled by Archer 7 May 2024 as it results in a crash
 	WriteHook((void*)0x474541, (void*)Passive_474541_Hook, HOOKTYPE_JUMP);
 
 	WriteHook((void*)0x75E8F9, (void*) ImposedSpells1, HOOKTYPE_JUMP);
@@ -9058,7 +9068,7 @@ void CreateAdditionalTables()
 	isConstruct_Table[30] = isConstruct_Table[31] = isConstruct_Table[32] = isConstruct_Table[33] = 1;
 	isConstruct_Table[116] = isConstruct_Table[117] = isConstruct_Table[133] = 1;
 
-	WriteHook((void*) 0x004E6307, (void*)hook_004E6307, HOOKTYPE_JUMP); // Archer: hero spell specialty effect
+	// WriteHook((void*) 0x004E6307, (void*)hook_004E6307, HOOKTYPE_JUMP); // Disabled by Archer 8 Jun 2024: hero spell specialty effect
 
 
 	for (int i = 0; i < MONSTERS_AMOUNT; ++i)

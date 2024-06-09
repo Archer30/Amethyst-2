@@ -48,7 +48,8 @@ public:
 		// * flag 2000
 		unsigned spell_from_artifact : 1;
 		// * flag 4000
-		// * Air/Fire Shield, Protections From, Anti-Magic, Magic Mirror, Stone Skin, Counterstrike
+		// * Air/
+		// , Protections From, Anti-Magic, Magic Mirror, Stone Skin, Counterstrike
 		unsigned defensive : 1;
 		// * flag 8000
 		// * All damage spells except INFERNO and CHAING LIGHTNING
