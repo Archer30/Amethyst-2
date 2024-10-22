@@ -8609,6 +8609,15 @@ _LHF_(hook_005A03A8) {
 	return EXEC_DEFAULT;
 }
 
+// Archer30: Bug Fixes
+_LHF_(hook_004675FE) {
+	void* our_def = *(void**)(c->ebp + 0x18);
+	if (our_def) return EXEC_DEFAULT;
+
+	c->return_address = 0x0046797E;
+	return SKIP_DEFAULT;
+}
+
 void CreateAdditionalTables()
 {
 	static bool first_time = true;
@@ -9122,6 +9131,9 @@ void CreateAdditionalTables()
 	Z_Amethyst->WriteLoHook(0x756BA0, z_756BA0_hook);
 
 	Z_Amethyst->WriteLoHook(0x00478C9E, z_hook_00478C9E);
+
+	// Archer30: Bug fixes
+	Z_Amethyst->WriteLoHook(0x004675FE, hook_004675FE);
 
 	first_time = false;
 }
