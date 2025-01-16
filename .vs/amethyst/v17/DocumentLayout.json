@@ -3,12 +3,35 @@
   "WorkspaceRootPath": "D:\\Documents\\GitHub\\Amethyst-2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documents\\GitHub\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\tables.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\tables.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\patcher_x86_commented.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\patcher_x86_commented.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\__include\\heroes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:__include\\heroes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\H3CombatMonster.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3Spell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\H3Spell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\amethyst.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -18,28 +41,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\H3CombatMonster.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\GameMgr_GetRandMonster_ByLevel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\GameMgr_GetRandMonster_ByLevel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\Summon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\Summon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3Spell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\H3Spell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\__include\\era.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -104,15 +111,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "H3MapItems.hpp",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
+              "RelativeDocumentMoniker": "..\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
+              "ToolTip": "D:\\Documents\\GitHub\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
+              "RelativeToolTip": "..\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAALsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-30T03:08:48.569Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "patcher_x86_commented.hpp",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\patcher_x86_commented.hpp",
+              "RelativeDocumentMoniker": "amethyst\\patcher_x86_commented.hpp",
+              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\patcher_x86_commented.hpp",
+              "RelativeToolTip": "amethyst\\patcher_x86_commented.hpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwDAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-27T11:40:22.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Functions.asm",
               "DocumentMoniker": "D:\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm",
@@ -123,32 +152,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "tables.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\tables.cpp",
               "RelativeDocumentMoniker": "amethyst\\tables.cpp",
               "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\tables.cpp",
               "RelativeToolTip": "amethyst\\tables.cpp",
-              "ViewState": "AgIAAJ4jAAAAAAAAAAAAALMjAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFQjAAAAAAAAAAAcwGojAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-15T03:15:25.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "heroes.h",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\__include\\heroes.h",
               "RelativeDocumentMoniker": "__include\\heroes.h",
               "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\__include\\heroes.h",
               "RelativeToolTip": "__include\\heroes.h",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAIwI0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwFgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-15T03:13:20.773Z"
+              "WhenOpened": "2024-02-15T03:13:20.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Summon.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\Summon.cpp",
               "RelativeDocumentMoniker": "amethyst\\Summon.cpp",
@@ -160,19 +190,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "dllmain.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\dllmain.cpp",
               "RelativeDocumentMoniker": "amethyst\\dllmain.cpp",
               "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\dllmain.cpp",
               "RelativeToolTip": "amethyst\\dllmain.cpp",
-              "ViewState": "AgIAABkAAAAAAAAAAAAwwC0AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAJkDAAAAAAAAAAAAAG4BAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-15T03:07:34.831Z"
+              "WhenOpened": "2024-02-15T03:07:34.831Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "GameMgr_GetRandMonster_ByLevel.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\GameMgr_GetRandMonster_ByLevel.cpp",
               "RelativeDocumentMoniker": "amethyst\\GameMgr_GetRandMonster_ByLevel.cpp",
@@ -184,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "heroes.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\__include\\heroes.cpp",
               "RelativeDocumentMoniker": "__include\\heroes.cpp",
@@ -196,43 +227,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "core.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\core.cpp",
               "RelativeDocumentMoniker": "amethyst\\core.cpp",
               "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\core.cpp",
               "RelativeToolTip": "amethyst\\core.cpp",
-              "ViewState": "AgIAAMkCAAAAAAAAAAAwwOsCAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAAALUDAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-15T03:07:29.841Z"
+              "WhenOpened": "2024-02-15T03:07:29.841Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "H3CombatMonster.hpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp",
               "RelativeDocumentMoniker": "amethyst\\H3CombatMonster.hpp",
-              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp",
-              "RelativeToolTip": "amethyst\\H3CombatMonster.hpp",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAwwIAAAABNAAAAAAAAAA==",
+              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp*",
+              "RelativeToolTip": "amethyst\\H3CombatMonster.hpp*",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAcwJAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-20T19:44:47.248Z"
+              "WhenOpened": "2024-04-20T19:44:47.248Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "H3Spell.h",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3Spell.h",
               "RelativeDocumentMoniker": "amethyst\\H3Spell.h",
               "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3Spell.h",
               "RelativeToolTip": "amethyst\\H3Spell.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAcwDQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-20T19:44:48.358Z"
+              "WhenOpened": "2024-04-20T19:44:48.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "era.h",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\__include\\era.h",
               "RelativeDocumentMoniker": "__include\\era.h",
@@ -244,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "amethyst.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\amethyst.cpp",
               "RelativeDocumentMoniker": "amethyst\\amethyst.cpp",
@@ -256,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "stdafx.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\stdafx.cpp",
               "RelativeDocumentMoniker": "amethyst\\stdafx.cpp",
@@ -268,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "majaczek.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\majaczek.cpp",
               "RelativeDocumentMoniker": "amethyst\\majaczek.cpp",
@@ -280,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "MiscCreatureHooks.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\MiscCreatureHooks.cpp",
               "RelativeDocumentMoniker": "amethyst\\MiscCreatureHooks.cpp",
@@ -292,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "corecrt_wstdio.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt\\corecrt_wstdio.h",
               "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt\\corecrt_wstdio.h",
@@ -302,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "DropHtml.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\DropHtml.cpp",
               "RelativeDocumentMoniker": "amethyst\\DropHtml.cpp",
@@ -314,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "creexpo1024.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\creexpo1024.cpp",
               "RelativeDocumentMoniker": "amethyst\\creexpo1024.cpp",
@@ -326,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "BugFix.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\BugFix.cpp",
               "RelativeDocumentMoniker": "amethyst\\BugFix.cpp",
@@ -338,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "erm_types.h",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\erm_types.h",
               "RelativeDocumentMoniker": "amethyst\\erm_types.h",
@@ -350,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "__assembly__.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\__assembly__.cpp",
               "RelativeDocumentMoniker": "amethyst\\__assembly__.cpp",
@@ -362,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "stdafx.h",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\stdafx.h",
               "RelativeDocumentMoniker": "amethyst\\stdafx.h",
@@ -374,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\ReadMe.txt",
               "RelativeDocumentMoniker": "amethyst\\ReadMe.txt",
@@ -386,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "majaczek.h",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\majaczek.h",
               "RelativeDocumentMoniker": "amethyst\\majaczek.h",

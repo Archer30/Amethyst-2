@@ -2566,6 +2566,7 @@ __declspec(naked) void isAmmoCart_on_BF()
 		je left
 
 		right:
+		mov eax, 0                 // @SadnessPower: game crashed when Ammo cart is on the right side because the next command is ADD, and eax started from 1
 		add eax, 0x15 * 0x548
 		left:
 		
