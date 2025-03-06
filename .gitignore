@@ -17,22 +17,12 @@
 *.7z
 */*.vcxproj
 */*.sln
-*.pch
+*/pch.*
 */framework.*
 
 /release/
 /.vs/
 /headers/
-
-*.suo
-*.db
-*.ipch
-*.map
-*.obj
-*.log
-*.lastbuildstate
-*.tlog
-*.pdb
 
 
 # User-specific files (MonoDevelop/Xamarin Studio)

@@ -3,9 +3,6 @@
   "WorkspaceRootPath": "D:\\Documents\\GitHub\\Amethyst-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documents\\GitHub\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\tables.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\tables.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -22,12 +19,15 @@
       "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\patcher_x86_commented.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\H3CombatMonster.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\__include\\heroes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:__include\\heroes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|solutionrelative:amethyst\\H3CombatMonster.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documents\\GitHub\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62143978-4124-45FE-9D6D-CD15653D25F0}|amethyst\\amethyst.vcxproj|D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3Spell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -116,49 +116,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "H3MapItems.hpp",
-              "DocumentMoniker": "D:\\Documents\\GitHub\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
-              "RelativeDocumentMoniker": "..\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
-              "ToolTip": "D:\\Documents\\GitHub\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
-              "RelativeToolTip": "..\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAAALsAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-30T03:08:48.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "patcher_x86_commented.hpp",
-              "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\patcher_x86_commented.hpp",
-              "RelativeDocumentMoniker": "amethyst\\patcher_x86_commented.hpp",
-              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\patcher_x86_commented.hpp",
-              "RelativeToolTip": "amethyst\\patcher_x86_commented.hpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAcwDAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-27T11:40:22.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Functions.asm",
-              "DocumentMoniker": "D:\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm",
-              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm",
-              "ToolTip": "D:\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm",
-              "RelativeToolTip": "..\\..\\..\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-17T05:54:52.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "tables.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\tables.cpp",
               "RelativeDocumentMoniker": "amethyst\\tables.cpp",
               "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\tables.cpp",
               "RelativeToolTip": "amethyst\\tables.cpp",
-              "ViewState": "AgIAAFQjAAAAAAAAAAAcwGojAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAOIhAAAAAAAAAAAhwPEhAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-15T03:15:25.596Z",
               "EditorCaption": ""
@@ -171,47 +134,22 @@
               "RelativeDocumentMoniker": "__include\\heroes.h",
               "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\__include\\heroes.h",
               "RelativeToolTip": "__include\\heroes.h",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAcwFgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAmwFgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-15T03:13:20.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-15T03:13:20.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Summon.cpp",
-              "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\Summon.cpp",
-              "RelativeDocumentMoniker": "amethyst\\Summon.cpp",
-              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\Summon.cpp",
-              "RelativeToolTip": "amethyst\\Summon.cpp",
-              "ViewState": "AgIAACkBAAAAAAAAAAAwwFEBAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-15T03:24:13.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "dllmain.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\dllmain.cpp",
               "RelativeDocumentMoniker": "amethyst\\dllmain.cpp",
               "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\dllmain.cpp",
               "RelativeToolTip": "amethyst\\dllmain.cpp",
-              "ViewState": "AgIAAJkDAAAAAAAAAAAAAG4BAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAhwKYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-15T03:07:34.831Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GameMgr_GetRandMonster_ByLevel.cpp",
-              "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\GameMgr_GetRandMonster_ByLevel.cpp",
-              "RelativeDocumentMoniker": "amethyst\\GameMgr_GetRandMonster_ByLevel.cpp",
-              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\GameMgr_GetRandMonster_ByLevel.cpp",
-              "RelativeToolTip": "amethyst\\GameMgr_GetRandMonster_ByLevel.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-15T04:40:52.87Z"
             },
             {
               "$type": "Document",
@@ -227,29 +165,87 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "H3CombatMonster.hpp",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp",
+              "RelativeDocumentMoniker": "amethyst\\H3CombatMonster.hpp",
+              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp",
+              "RelativeToolTip": "amethyst\\H3CombatMonster.hpp",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAmwBkBAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-20T19:44:47.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "core.cpp",
               "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\core.cpp",
               "RelativeDocumentMoniker": "amethyst\\core.cpp",
               "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\core.cpp",
               "RelativeToolTip": "amethyst\\core.cpp",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAAALUDAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAADsDAAAAAAAAAAAhwEsDAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-15T03:07:29.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "H3CombatMonster.hpp",
-              "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp",
-              "RelativeDocumentMoniker": "amethyst\\H3CombatMonster.hpp",
-              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\H3CombatMonster.hpp*",
-              "RelativeToolTip": "amethyst\\H3CombatMonster.hpp*",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAcwJAAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "patcher_x86_commented.hpp",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\patcher_x86_commented.hpp",
+              "RelativeDocumentMoniker": "amethyst\\patcher_x86_commented.hpp",
+              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\patcher_x86_commented.hpp",
+              "RelativeToolTip": "amethyst\\patcher_x86_commented.hpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwDAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-20T19:44:47.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T11:40:22.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameMgr_GetRandMonster_ByLevel.cpp",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\GameMgr_GetRandMonster_ByLevel.cpp",
+              "RelativeDocumentMoniker": "amethyst\\GameMgr_GetRandMonster_ByLevel.cpp",
+              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\GameMgr_GetRandMonster_ByLevel.cpp",
+              "RelativeToolTip": "amethyst\\GameMgr_GetRandMonster_ByLevel.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-15T04:40:52.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Summon.cpp",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\Summon.cpp",
+              "RelativeDocumentMoniker": "amethyst\\Summon.cpp",
+              "ToolTip": "D:\\Documents\\GitHub\\Amethyst-2\\amethyst\\Summon.cpp",
+              "RelativeToolTip": "amethyst\\Summon.cpp",
+              "ViewState": "AgIAACkBAAAAAAAAAAAwwFEBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-15T03:24:13.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Functions.asm",
+              "DocumentMoniker": "D:\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm",
+              "ToolTip": "D:\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Sources\\FASM\\Typhon\\Functions.asm",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-17T05:54:52.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "H3MapItems.hpp",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
+              "RelativeDocumentMoniker": "..\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
+              "ToolTip": "D:\\Documents\\GitHub\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
+              "RelativeToolTip": "..\\H3API\\include\\h3api\\H3AdventureMap\\H3MapItems.hpp",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAJkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-30T03:08:48.569Z"
             },
             {
               "$type": "Document",
@@ -261,8 +257,7 @@
               "RelativeToolTip": "amethyst\\H3Spell.h",
               "ViewState": "AgIAACUAAAAAAAAAAAAcwDQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-20T19:44:48.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T19:44:48.358Z"
             },
             {
               "$type": "Document",
