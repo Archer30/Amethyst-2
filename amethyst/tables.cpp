@@ -8655,8 +8655,9 @@ void CreateAdditionalTables()
 	// Z_Amethyst->WriteLoHook(0x005A7B77,hook_next_creature);
 	// 00478CC3
 
-	Z_Amethyst->WriteLoHook(0x0075F840, z_hook_0075F840); // Archer: erm patches
-	Z_Amethyst->WriteLoHook(0x0075642C, z_hook_0075642C);
+	// Archer: erm patches
+	Z_Amethyst->WriteLoHook(0x0075F840, z_hook_0075F840); // BM:W
+	Z_Amethyst->WriteLoHook(0x0075642C, z_hook_0075642C); // MA:W
 
 	//majaczek tables
 	memset(resource_type_table, -1, MONSTERS_AMOUNT);
@@ -8693,6 +8694,7 @@ void CreateAdditionalTables()
 		CreatureSpellPowerDivider[i] = 1;
 		CreatureSpellPowerAdder[i] = 0;
 	}
+	CreatureSpellPowerMultiplier[134] = 5;
 
 	memset(DalionsGuards,-1,MONSTERS_AMOUNT*4);
 	//DalionsGuards[230] = 29;

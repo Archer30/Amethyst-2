@@ -138,6 +138,19 @@ void  __stdcall load_things_late(PEvent e) {
 	// Z_Amethyst->WriteLoHook(0x005A7B77, hook_005A7B77);
 }
 
+void __stdcall removeWOGDataTransfer(PEvent e)
+{
+	//	globalPatcher->UndoAllAt(0x007493A3);
+	globalPatcher->UndoAllAt(0x512FD3);
+	globalPatcher->UndoAllAt(0x4ACB5B);
+	globalPatcher->UndoAllAt(0x5575E4);
+	globalPatcher->UndoAllAt(0x4AE0C4);
+	globalPatcher->UndoAllAt(0x557047);
+	globalPatcher->UndoAllAt(0x557515);
+}
+
+
+
 void MiscCreatureHooks_apply_strings();
 void  __stdcall drop_html_creature_list(PEvent e) {
 	MiscCreatureHooks_apply_strings();
@@ -145,9 +158,11 @@ void  __stdcall drop_html_creature_list(PEvent e) {
 }
 
 
-void install_CrState();
+extern void install_CrState();
+extern void install_network_remappings();
 void  __stdcall install_CrState(PEvent e) {
 	install_CrState();
+	install_network_remappings();
 	set_erm_limits();
 }
 

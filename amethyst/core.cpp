@@ -5,6 +5,10 @@ extern int conf_creatures;
 extern int all_creatures;
 extern void creexpo1024(void);
 
+MONSTER_PROP new_monsters_back[MONSTERS_AMOUNT];
+MONSTER_PROP new_monsters[MONSTERS_AMOUNT];
+CRANIM new_cranim[MONSTERS_AMOUNT];
+
 
 extern Patcher* globalPatcher;
 extern PatcherInstance* Z_Amethyst;
@@ -34,6 +38,27 @@ const Dword p_CrState = (Dword) (void*) &CrState[0];
 constexpr long sizeof_CrState = sizeof(_CrState_);
 
 replace_dword replace_CrState[] = {
+	// SendCreatures
+	{0x007505D6 + 2, p_CrState + 4}, //0x277386C
+	{0x007505EE + 2, p_CrState + 8},
+	{0x00750606 + 2, p_CrState + 12},
+	{0x0075063D + 3, p_CrState + 16},
+	{0x00750658 + 2, p_CrState + 44},
+	{0x00750670 + 2, p_CrState + 48},
+	{0x00750688 + 2, p_CrState + 52},
+	{0x007506A0 + 2, p_CrState + 56},
+	{0x007506B8 + 2, p_CrState + 60},
+	{0x007506D0 + 2, p_CrState + 64},
+	{0x007506E8 + 2, p_CrState + 68},
+	{0x00750700 + 2, p_CrState + 72},
+	{0x00750718 + 2, p_CrState + 76},
+	{0x00750730 + 2, p_CrState + 80},
+	{0x00750748 + 2, p_CrState + 84},
+	{0x00750760 + 2, p_CrState + 88},
+	{0x00750778 + 2, p_CrState + 92},
+	{0x00750790 + 2, p_CrState + 96},
+
+	// ReceiveCreatures
 	{0x007508D8 + 2, p_CrState + 4}, // 0x277386C
 	{0x007508F0 + 2, p_CrState + 8},
 	{0x00750908 + 2, p_CrState + 12}, // 0x2773874
@@ -53,44 +78,51 @@ replace_dword replace_CrState[] = {
 	{0x00750A7A + 2, p_CrState + 92},
 	{0x00750A92 + 2, p_CrState + 96},
 
-
-	{0x007505D6 + 2, p_CrState + 4}, //0x277386C
-	{0x007505EE + 2, p_CrState + 8},
-	{0x00750606 + 2, p_CrState + 12}, 
-	{0x0075063D + 3, p_CrState + 16},
-	{0x00750658 + 2, p_CrState + 44},
-	{0x00750670 + 2, p_CrState + 48},
-	{0x00750688 + 2, p_CrState + 52},
-	{0x007506A0 + 2, p_CrState + 56},
-	{0x007506B8 + 2, p_CrState + 60},
-	{0x007506D0 + 2, p_CrState + 64},
-	{0x007506E8 + 2, p_CrState + 68},
-	{0x00750700 + 2, p_CrState + 72},
-	{0x00750718 + 2, p_CrState + 76},
-	{0x00750730 + 2, p_CrState + 80},
-	{0x00750748 + 2, p_CrState + 84},
-	{0x00750760 + 2, p_CrState + 88},
-	{0x00750778 + 2, p_CrState + 92},
-	{0x0075078A + 2, p_CrState + 96},
-
+	{0,0}
+};
+const Dword p_new_monsters = (Dword)(void*)&new_monsters[0];
+replace_dword replace_CrStateNetwork[] = {
+	// SendCreatures
+	{0x007505D0 + 2, p_new_monsters + 0},
+	{0x007505E8 + 2, p_new_monsters + 4},
+	{0x00750600 + 2, p_new_monsters + 16},
+	{0x00750636 + 3, p_new_monsters + 32},
+	{0x00750652 + 2, p_new_monsters + 60},
+	{0x0075066A + 2, p_new_monsters + 64},
+	{0x00750682 + 2, p_new_monsters + 68},
+	{0x0075069A + 2, p_new_monsters + 72},
+	{0x007506B2 + 2, p_new_monsters + 76},
+	{0x007506CA + 2, p_new_monsters + 80},
+	{0x007506E2 + 2, p_new_monsters + 84},
+	{0x007506FA + 2, p_new_monsters + 88},
+	{0x00750712 + 2, p_new_monsters + 92},
+	{0x0075072A + 2, p_new_monsters + 96},
+	{0x00750742 + 2, p_new_monsters + 100},
+	{0x0075075A + 2, p_new_monsters + 104},
+	{0x00750772 + 2, p_new_monsters + 108},
+	{0x0075078A + 2, p_new_monsters + 112},
+	// ReceiveCreatures
+	{0x007508DE + 2, p_new_monsters + 0},
+	{0x007508F6 + 2, p_new_monsters + 4},
+	{0x0075090E + 2, p_new_monsters + 16},
+	{0x00750945 + 3, p_new_monsters + 32},
+	{0x00750960 + 2, p_new_monsters + 60},
+	{0x00750978 + 2, p_new_monsters + 64},
+	{0x00750990 + 2, p_new_monsters + 68},
+	{0x007509A8 + 2, p_new_monsters + 72},
+	{0x007509C0 + 2, p_new_monsters + 76},
+	{0x007509D8 + 2, p_new_monsters + 80},
+	{0x007509F0 + 2, p_new_monsters + 84},
+	{0x00750A08 + 2, p_new_monsters + 88},
+	{0x00750A20 + 2, p_new_monsters + 92},
+	{0x00750A38 + 2, p_new_monsters + 96},
+	{0x00750A50 + 2, p_new_monsters + 100},
+	{0x00750A68 + 2, p_new_monsters + 104},
+	{0x00750A80 + 2, p_new_monsters + 108},
+	{0x00750A98 + 2, p_new_monsters + 112},
 	{0,0}
 };
 
-void install_CrState() {
-	for (int i = 0; replace_CrState[i].address; ++i)
-		*(int*)replace_CrState[i].address = replace_CrState[i].new_dword;
-	
-	*(int*)(0x007505BE + 2) = p_CrState; //0x2773868
-
-	*(unsigned char*)0x00750868 = 0x8B;
-	*(unsigned char*)0x0075086A = 0x89;
-	*(int*)(0x0075086A + 2) = p_CrState;
-
-	*(int*)(0x00750896 + 2) = p_CrState;
-
-
-	*(int*)(0x007507A7 + 2) = p_CrState;
-}
 
 //// majaczek's commment
 // useful adressses:
@@ -107,9 +139,6 @@ void* (__fastcall* FindDefOrMskInAllLods)(const char* name) =
 (void* (__fastcall*)(const char*)) (0x0055D160);
 
 
-MONSTER_PROP new_monsters_back[MONSTERS_AMOUNT];
-MONSTER_PROP new_monsters[MONSTERS_AMOUNT];
-CRANIM new_cranim[MONSTERS_AMOUNT];
 
 /*
 char *names[MONSTERS_AMOUNT];
@@ -265,7 +294,9 @@ int p_AddressOfERMLimit[] = { 0x00756410, 0x007504F8, 0x00732CA9, 0x00733326,
 
 	0x756A40 + 3, 0x756A9A + 3, //responsible for zghost.txt
 
-	0x760F3E + 3, 0x7614DD + 3 //responsible for wog saver/loader
+	0x760F3E + 3, 0x7614DD + 3, //responsible for wog saver/loader
+	// SadnessPower
+	0x7504F5 + 3, 0x750490 + 3, 0x750548 + 3
 };
 
 int p_AddressOfERMLimit2[]=
@@ -618,6 +649,122 @@ int* Exe2Mem (int adr)
     else				return ((int*)(adr + 0x465000));        
 }
 */
+
+struct _CrChanged_ {
+	int DayOfSet;
+} CrChanged[MONSTERS_AMOUNT];
+
+const int newNetworkBufferSize = 1000000;
+char networkBuffer[newNetworkBufferSize + 5000];
+
+void install_network_remappings()
+{
+	// CrTraits 
+	for (int i = 0; replace_CrStateNetwork[i].address; ++i)
+		*(int*)replace_CrStateNetwork[i].address = replace_CrStateNetwork[i].new_dword;
+
+	memcpy((void*)CrChanged, (void*)0x8A3210, sizeof(_CrChanged_) * 197);
+
+	int p_AddressOfCrChanged[] = { 0x008A3210, 0x0075049C + 3, 0x007504AE + 3, 0x007504BD + 3,
+								0x00750521 + 3, 0x00750554 + 3, 0x007505A9 + 3 };
+
+
+	for (int i = 0; i != (sizeof(p_AddressOfCrChanged) / 4); i++)
+	{
+		*(int*)(p_AddressOfCrChanged[i]) = (int)CrChanged;
+	}
+
+	/*
+	// CrExpBon::BFBody - Send -> this mapping is WRONG, the addresses are correct but the table is wrong. Anyway, there is no need to be mapped.
+	*(int*)(0x00762CFB + 2) = (int)sizeof(experience_0x00847f08_table);
+	*(int*)(0x00762D04 + 2) = (int)experience_0x00847f08_table;
+	// CrExpBon::BFBody - Receive -> this mapping is WRONG, the addresses are correct but the table is wrong. Anyway, there is no need to be mapped.
+	*(int*)(0x00762D2D + 3) = (int)sizeof(experience_0x00847f08_table);
+	*(int*)(0x00762D51 + 1) = (int)sizeof(experience_0x00847f08_table);
+	*(int*)(0x00762D5A + 1) = (int)experience_0x00847f08_table;
+
+	// Buffer size increase, for further use (not needed now)
+
+	int bufferSizeRemapping[] = {
+								  0x00763208 + 2,
+								  0x0076327D + 1,
+								  0x00763316 + 2,
+								  0x0076338B + 1,
+								  0x007633FB + 1,
+								  0x00763495 + 2,
+								  0x00763506 + 2,
+								  0x00763577 + 2,
+								  0x007635E8 + 2,
+								  0x00763659 + 2,
+								  0x007636CA + 2,
+								  0x0076373B + 2,
+								  0x00763C0E + 3   // Prepare2Send
+	};
+
+	for (int i = 0; i != (sizeof(bufferSizeRemapping) / 4); i++)
+	{
+		Z_Amethyst->WriteDword(bufferSizeRemapping[i], newNetworkBufferSize);
+	}
+
+	int bufferRemapping[] = {
+							  0x00763CF2 + 2,
+							  0x00763C1A + 2,
+							  0x007637AE + 2,
+							  0x007632C6 + 2,
+							  0x007633D4 + 2,
+							  0x00763444 + 2,
+							  0x00763C4A + 2,
+							  0x00763252 + 2,
+							  0x00763360 + 2,
+							  0x007634DF + 2,
+							  0x00763550 + 2,
+							  0x007635C1 + 2,
+							  0x00763632 + 2,
+							  0x007636A3 + 2,
+							  0x00763714 + 2,
+							  0x00763785 + 2,
+							  0x0076321B + 2,
+							  0x00763329 + 2,
+							  0x007634A8 + 2,
+							  0x00763519 + 2,
+							  0x0076358A + 2,
+							  0x007635FB + 2,
+							  0x0076366C + 2,
+							  0x007636DD + 2,
+							  0x0076374E + 2,
+							  0x0076379C + 2,
+							  0x007631A9 + 2,
+							  0x0076328F + 2,
+							  0x0076339D + 2,
+							  0x0076340D + 2,
+							  0x00763193 + 2
+							};
+
+	for (int i = 0; i != (sizeof(bufferRemapping) / 4); i++)
+	{
+		Z_Amethyst->WriteDword(bufferRemapping[i], (int)networkBuffer);
+	}
+
+	// Remapping buffer
+	*(int*)(0x02846C60) = (int)networkBuffer;  */
+}
+
+
+void install_CrState() {
+	for (int i = 0; replace_CrState[i].address; ++i)
+		*(int*)replace_CrState[i].address = replace_CrState[i].new_dword;
+
+	*(int*)(0x007505BE + 2) = p_CrState; //0x2773868
+
+	*(unsigned char*)0x00750868 = 0x8B;
+	*(unsigned char*)0x0075086A = 0x89;
+	*(int*)(0x0075086A + 2) = p_CrState;
+
+	*(int*)(0x00750896 + 2) = p_CrState;
+
+
+	*(int*)(0x007507A7 + 2) = p_CrState;
+}
 
 const char *dummydef="CHALF.def";
 const char *dummysnd="lich";
